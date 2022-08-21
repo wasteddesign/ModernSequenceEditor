@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{2837EBA5-2F9A-4192-A2E7-95D41F6C478F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ModernSequenceEditor</RootNamespace>
+    <AssemblyName>Modern Sequence Editor.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\ot\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+    <StartArguments>/nocr</StartArguments>
+    <StartWorkingDirectory>c:\buzz</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Program</StartAction>
+    <StartProgram>c:\buzz\buzz.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>
+    </DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>Full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>None</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BuzzGUI.Common">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BuzzGUI.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BuzzGUI.SequenceEditor">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.SequenceEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ModernSequenceEditor.Interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\ModernSequenceEditor.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomSequencerWindow.cs" />
+    <Compile Include="ModernSequenceEditor.cs" />
+    <Compile Include="SequencerEditorWindowUserControl.xaml.cs">
+      <DependentUpon>SequencerEditorWindowUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sequencer\Actions\ChangeVUMeterTargetAction.cs" />
+    <Compile Include="Sequencer\Actions\SetTimeSignatureAction.cs" />
+    <Compile Include="Sequencer\Actions\TSLInsertOrDeleteAction.cs" />
+    <Compile Include="Sequencer\BrushSet.cs" />
+    <Compile Include="Sequencer\Clipboard.cs" />
+    <Compile Include="Sequencer\CursorElement.cs" />
+    <Compile Include="Sequencer\EditContext.cs" />
+    <Compile Include="Sequencer\EventRef.cs" />
+    <Compile Include="Sequencer\HoldDragHelper.cs" />
+    <Compile Include="Sequencer\MarkerControl.xaml.cs">
+      <DependentUpon>MarkerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sequencer\MIDIExporter.cs" />
+    <Compile Include="Sequencer\PatternElement.cs" />
+    <Compile Include="Sequencer\PatternEx.cs" />
+    <Compile Include="Sequencer\PatternResizeHelper.cs" />
+    <Compile Include="Sequencer\PatternVisual.cs" />
+    <Compile Include="Sequencer\PatternVisualCache.cs" />
+    <Compile Include="Sequencer\SelectionLayer.cs" />
+    <Compile Include="Sequencer\SequenceEditor.xaml.cs">
+      <DependentUpon>SequenceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sequencer\SequenceEditorSettings.cs" />
+    <Compile Include="Sequencer\StepEditWindow.xaml.cs">
+      <DependentUpon>StepEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sequencer\TimelineElement.cs" />
+    <Compile Include="Sequencer\TimeSignatureList.cs" />
+    <Compile Include="Sequencer\TrackBackgroundElement.cs" />
+    <Compile Include="Sequencer\TrackControl.xaml.cs">
+      <DependentUpon>TrackControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sequencer\TrackHeaderControl.xaml.cs">
+      <DependentUpon>TrackHeaderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sequencer\ViewSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sequencer\BuzzGUI.SequenceEditor.csproj" />
+    <None Include="Sequencer\ModernSequenceEditor.PartCover.Settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="SequencerEditorWindowUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sequencer\MarkerControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sequencer\SequenceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sequencer\StepEditWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sequencer\TrackControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Sequencer\TrackHeaderControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <PropertyGroup>
+    <PostBuildEvent>powershell -Command "Start-Process cmd -ArgumentList('/C', 'COPY /Y \"$(SolutionDir)ModernSequenceEditor\bin\*\" \"C:\Program Files (x86)\Jeskola\Buzz\Gear\Generators\"')"  -Verb RunAs
+powershell -Command "Start-Process cmd -ArgumentList('/C', 'COPY /Y \"$(SolutionDir)ModernSequenceEditor\bin\*\" \"C:\Program Files\Jeskola\Buzz\Gear\Generators\"')"  -Verb RunAs</PostBuildEvent>
+  </PropertyGroup>
+</Project>
