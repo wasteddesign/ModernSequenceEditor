@@ -274,7 +274,7 @@ namespace WDE.ModernSequenceEditor
 
 			char ch = '0';
 
-			foreach (var p in sequence.Machine.Patterns)
+			foreach (var p in sequence.Machine.Patterns.OrderBy(x => x.Name))
 			{
 				patternList.Add(new PatternListItem(p, ch));
 
